@@ -6,18 +6,22 @@
 //  Copyright (c) 2013 Travis Jeffery. All rights reserved.
 //
 
-#import "TRVSTestManager.h"
+#import "TRVSMonitor.h"
 
-@implementation TRVSTestManager {
+@implementation TRVSMonitor {
     int _signalsRemaining;
     int _expectedSignalCount;
 }
 
-- (id)init {
++ (instancetype)monitor {
+    return [[self alloc] init];
+}
+
+- (instancetype)init {
     return [self initWithExpectedSignalCount:1];
 }
 
-- (id)initWithExpectedSignalCount:(NSInteger)expectedSignalCount {
+- (instancetype)initWithExpectedSignalCount:(NSInteger)expectedSignalCount {
     self = [super init];
     if (self) {
         _expectedSignalCount = expectedSignalCount;
@@ -30,27 +34,24 @@
     [self waitWithTimeout:0];
 }
 
-- (void)waitWithPeriodicHandler:(TRVSTestManagerHandler)handler {
-    [self waitWithTimeout:0 periodicHandler:handler];
+- (void)waitWithSignalHandler:(TRVSMonitorHandler)handler {
+    [self waitWithTimeout:0 signalHandler:handler];
 }
 
 - (BOOL)waitWithTimeout:(NSUInteger)timeout {
-    return [self waitWithTimeout:timeout periodicHandler:nil];
+    return [self waitWithTimeout:timeout signalHandler:nil];
 }
 
-- (BOOL)waitWithTimeout:(NSUInteger)timeout periodicHandler:(TRVSTestManagerHandler)handler {
+- (BOOL)waitWithTimeout:(NSTimeInterval)timeout signalHandler:(TRVSMonitorHandler)handler {
     NSDate *start = [NSDate date];
-    
+
     while (_signalsRemaining > 0) {
         [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:.1]];
-        if (timeout > 0 &&
-            [[NSDate date] timeIntervalSinceDate:start] > timeout) {
+        if ([self didTimeOut:timeout fromStartDate:start]) {
             [self reset];
             return NO;
         }
-        if (handler) {
-            handler(self);
-        }
+        if (handler) handler(self);
     };
     [self reset];
     return YES;
@@ -62,6 +63,12 @@
 
 - (void)reset {
     _signalsRemaining = _expectedSignalCount;
+}
+
+#pragma mark - Private
+
+- (BOOL)didTimeOut:(NSTimeInterval)timeout fromStartDate:(NSDate *)startDate {
+    return (timeout > 0 && [[NSDate date] timeIntervalSinceDate:startDate] > timeout);
 }
 
 @end
