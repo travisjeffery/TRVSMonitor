@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Travis Jeffery. All rights reserved.
 //
 
-#import "TRVSTestManagerHandler.h"
+#import "TRVSTestManager.h"
 
-@implementation TRVSTestManagerHandler {
+@implementation TRVSTestManager {
     int _signalsRemaining;
     int _expectedSignalCount;
 }
