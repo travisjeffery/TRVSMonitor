@@ -4,6 +4,8 @@ A synchronization construct with the ability to wait until signalled that a cond
 
 Able to use with any testing framework, including XCTest, SenTestingKit, expecta.
 
+[Why 'Monitor'](http://en.wikipedia.org/wiki/Monitor_%28synchronization%29).
+
 ## Example
 
 ``` objc
