@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
 
                       Test framework agnostic.
                     DESC
-  s.homepage     = "http://github.com/travisjeffery/TRVSMonitor"
-  s.license      = 'MIT'
+  s.homepage     = "https://github.com/travisjeffery/TRVSMonitor"
+  s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author       = { "Travis Jeffery" => "tj@travisjeffery.com" }
-  s.source       = { :git => "http://github.com/travisjeffery/TRVSMonitor.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/travisjeffery/TRVSMonitor.git", :tag => "0.0.1" }
   s.source_files  = 'TRVSMonitor', 'TRVSMonitor/**/*.{h,m}'
   s.requires_arc = true
 end
