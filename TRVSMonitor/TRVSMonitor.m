@@ -9,8 +9,8 @@
 #import "TRVSMonitor.h"
 
 @implementation TRVSMonitor {
-    int _signalsRemaining;
-    int _expectedSignalCount;
+    NSInteger _signalsRemaining;
+    NSInteger _expectedSignalCount;
 }
 
 + (instancetype)monitor {
