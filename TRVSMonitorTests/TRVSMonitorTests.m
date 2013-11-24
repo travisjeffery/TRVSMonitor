@@ -29,6 +29,15 @@
     XCTAssert([self.monitor waitWithTimeout:1]);
 }
 
+- (void)testURLSessionTask {
+    self.monitor = [[TRVSMonitor alloc] initWithExpectedSignalCount:1];
+    [[[NSURLSession sharedSession] dataTaskWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://google.com"]] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        [self.monitor signal];
+    }] resume];
+
+    XCTAssert([self.monitor wait]);
+}
+
 #pragma mark - Private
 
 - (void)signalAfterTimeInterval:(NSTimeInterval)timeInterval {
