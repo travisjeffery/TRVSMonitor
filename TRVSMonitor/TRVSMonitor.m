@@ -30,12 +30,12 @@
     return self;
 }
 
-- (void)wait {
-    [self waitWithTimeout:0];
+- (BOOL)wait {
+    return [self waitWithTimeout:0];
 }
 
-- (void)waitWithSignalHandler:(TRVSMonitorHandler)handler {
-    [self waitWithTimeout:0 signalHandler:handler];
+- (BOOL)waitWithSignalHandler:(TRVSMonitorHandler)handler {
+    return [self waitWithTimeout:0 signalHandler:handler];
 }
 
 - (BOOL)waitWithTimeout:(NSUInteger)timeout {
