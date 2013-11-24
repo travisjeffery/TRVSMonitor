@@ -23,10 +23,10 @@ Able to use with any testing framework, including XCTest, SenTestingKit, expecta
     __block NSDictionary *JSON = nil;
     __block TRVSMonitor *monitor = [TRVSMonitor monitor];
 
-    [self.URLSession dataTaskWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://127.0.0.1:8000"]] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    [[self.URLSession dataTaskWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://127.0.0.1:8000"]] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         JSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
         [monitor signal];
-    }];
+    }] resume];
 
     [monitor wait];
 
@@ -40,14 +40,14 @@ Able to use with any testing framework, including XCTest, SenTestingKit, expecta
     __block TRVSMonitor *monitor = [[TRVSMonitor alloc] initWithExpectedSignalCount:2];
 
     NSURL *baseURL = [NSURL URLWithString:@"http://127.0.0.1:8000"];
-    [self.URLSession dataTaskWithRequest:[NSURLRequest requestWithURL:baseURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    [[self.URLSession dataTaskWithRequest:[NSURLRequest requestWithURL:baseURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         personJSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
         [self.URLSession dataTaskWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:personJSON[@"id"] relativeToURL:baseURL]] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
             twitterJSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
             [monitor signal];
         }];
         [monitor signal];
-    }];
+    }] resume];
 
     [monitor wait];
 
