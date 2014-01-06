@@ -38,7 +38,7 @@
     return [self waitWithTimeout:0 signalHandler:handler];
 }
 
-- (BOOL)waitWithTimeout:(NSUInteger)timeout {
+- (BOOL)waitWithTimeout:(NSTimeInterval)timeout {
     return [self waitWithTimeout:timeout signalHandler:nil];
 }
 
@@ -47,13 +47,17 @@
 
     while (_signalsRemaining > 0) {
         [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:.1]];
+        
         if ([self didTimeOut:timeout fromStartDate:start]) {
             [self reset];
             return NO;
         }
+        
         if (handler) handler(self);
     };
+    
     [self reset];
+    
     return YES;
 }
 

@@ -17,7 +17,7 @@ typedef void (^TRVSMonitorHandler)(TRVSMonitor *monitor);
 - (instancetype)init;
 - (instancetype)initWithExpectedSignalCount:(NSInteger)expectedSignalCount;
 - (BOOL)wait;
-- (BOOL)waitWithTimeout:(NSUInteger)timeout;
+- (BOOL)waitWithTimeout:(NSTimeInterval)timeout;
 - (BOOL)waitWithSignalHandler:(TRVSMonitorHandler)handler;
 - (BOOL)waitWithTimeout:(NSTimeInterval)timeout signalHandler:(TRVSMonitorHandler)handler;
 - (void)signal;
