@@ -30,7 +30,7 @@ typedef void (^TRVSMonitorHandler)(TRVSMonitor *monitor);
 /**
  *  Initializes and returns a `TRVSMonitor` with the specified expected signal count.
  *
- * This is the designated initializer.
+ *  This is the designated initializer.
  *
  *  @param expectedSignalCount The number of times the `TRVSMonitor` needs to be signalled before it will stop waiting.
  *
@@ -41,7 +41,7 @@ typedef void (^TRVSMonitorHandler)(TRVSMonitor *monitor);
 /**
  *  Prevents following statements from executing until the `TRVSMonitor` is signalled its expected signal count.
  *
- *  @return is YES.
+ *  @return YES
  */
 - (BOOL)wait;
 
@@ -52,31 +52,30 @@ typedef void (^TRVSMonitorHandler)(TRVSMonitor *monitor);
  *
  *  @return NO if the `TRVSMonitor` timed out, YES otherwise.
  *
- * @see wait.
+ *  @see wait
  */
 - (BOOL)waitWithTimeout:(NSTimeInterval)timeout;
 
 /**
  *  Will continually execute the specified block in-between short time intervals.
  *
- *
  *  @param handler A block object to be executed in-between short time intervals.
  *
- *  @return is YES.
+ *  @return YES
  *
- * @see wait.
+ *  @see wait
  */
 - (BOOL)waitWithSignalHandler:(TRVSMonitorHandler)handler;
 
 /**
- * @see wait
- * @see waitWithTimeout:
- * @see waitWIthSignalHandler:
+ *  @see wait
+ *  @see waitWithTimeout:
+ *  @see waitWIthSignalHandler:
  */
 - (BOOL)waitWithTimeout:(NSTimeInterval)timeout signalHandler:(TRVSMonitorHandler)handler;
 
 /**
- *  What you message the `TRVSMonitor` as many times as the number of its expected signal count. Typically called in an asynchronously executing block.
+ *  What you message the `TRVSMonitor` as many times as the number of its expected signal count. Typically is called in an asynchronously executing block.
  */
 - (void)signal;
 
