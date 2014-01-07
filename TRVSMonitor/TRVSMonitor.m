@@ -31,11 +31,11 @@
 }
 
 - (BOOL)wait {
-    return [self waitWithTimeout:0];
+    return [self waitWithTimeout:0.0];
 }
 
 - (BOOL)waitWithSignalHandler:(TRVSMonitorHandler)handler {
-    return [self waitWithTimeout:0 signalHandler:handler];
+    return [self waitWithTimeout:0.0 signalHandler:handler];
 }
 
 - (BOOL)waitWithTimeout:(NSTimeInterval)timeout {
@@ -54,7 +54,7 @@
         }
         
         if (handler) handler(self);
-    };
+    }
     
     [self reset];
     
@@ -72,7 +72,7 @@
 #pragma mark - Private
 
 - (BOOL)didTimeOut:(NSTimeInterval)timeout fromStartDate:(NSDate *)startDate {
-    return (timeout > 0 && [[NSDate date] timeIntervalSinceDate:startDate] > timeout);
+    return (timeout > 0.0 && [[NSDate date] timeIntervalSinceDate:startDate] > timeout);
 }
 
 @end
