@@ -21,7 +21,7 @@ Able to use with any testing framework, including XCTest, SenTestingKit, expecta
 
 - (void)testAPIEndpoint {
     __block NSDictionary *JSON = nil;
-    __block TRVSMonitor *monitor = [TRVSMonitor monitor];
+    TRVSMonitor *monitor = [TRVSMonitor monitor];
 
     [[self.URLSession dataTaskWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://127.0.0.1:8000"]] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         JSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
@@ -37,7 +37,7 @@ Able to use with any testing framework, including XCTest, SenTestingKit, expecta
 
 - (void)testAPIEndpoints {
     __block NSDictionary *personJSON, *twitterJSON;
-    __block TRVSMonitor *monitor = [[TRVSMonitor alloc] initWithExpectedSignalCount:2];
+    TRVSMonitor *monitor = [[TRVSMonitor alloc] initWithExpectedSignalCount:2];
 
     NSURL *baseURL = [NSURL URLWithString:@"http://127.0.0.1:8000"];
     [[self.URLSession dataTaskWithRequest:[NSURLRequest requestWithURL:baseURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
