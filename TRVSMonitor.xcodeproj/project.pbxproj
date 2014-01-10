@@ -7,69 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32CE1F901807E79B00753121 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CE1F8F1807E79B00753121 /* Foundation.framework */; };
-		32CE1F921807E79B00753121 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CE1F911807E79B00753121 /* CoreGraphics.framework */; };
-		32CE1F941807E79B00753121 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CE1F931807E79B00753121 /* UIKit.framework */; };
-		32CE1FA91807E79C00753121 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CE1FA81807E79C00753121 /* XCTest.framework */; };
-		32CE1FAA1807E79C00753121 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CE1F8F1807E79B00753121 /* Foundation.framework */; };
-		32CE1FAB1807E79C00753121 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CE1F931807E79B00753121 /* UIKit.framework */; };
-		32CE200A18089B1C00753121 /* TRVSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE1FFB18089B1C00753121 /* TRVSMonitor.m */; };
-		32CE200C18089B1C00753121 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32CE1FFF18089B1C00753121 /* Images.xcassets */; };
-		32CE200D18089B1C00753121 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE200018089B1C00753121 /* main.m */; };
-		32CE200E18089B1C00753121 /* TRVSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE200218089B1C00753121 /* TRVSAppDelegate.m */; };
-		32CE201318089B9400753121 /* TRVSMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE200918089B1C00753121 /* TRVSMonitorTests.m */; };
-		32CE201418089B9A00753121 /* TRVSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE1FFB18089B1C00753121 /* TRVSMonitor.m */; };
+		32E76450187F8F0200F0CA5A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CE1FA81807E79C00753121 /* XCTest.framework */; };
+		32E76451187F8F0200F0CA5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CE1F8F1807E79B00753121 /* Foundation.framework */; };
+		32E76452187F8F0200F0CA5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CE1F931807E79B00753121 /* UIKit.framework */; };
+		32E76458187F8F0200F0CA5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32E76456187F8F0200F0CA5A /* InfoPlist.strings */; };
+		32E7645A187F8F0200F0CA5A /* iOS_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E76459187F8F0200F0CA5A /* iOS_Tests.m */; };
+		32E76464187F8F1B00F0CA5A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CE1FA81807E79C00753121 /* XCTest.framework */; };
+		32E7646A187F8F1B00F0CA5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32E76468187F8F1B00F0CA5A /* InfoPlist.strings */; };
+		32E7646C187F8F1B00F0CA5A /* OS_X_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E7646B187F8F1B00F0CA5A /* OS_X_Tests.m */; };
+		32E76473187F8F9700F0CA5A /* TRVSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE1FFB18089B1C00753121 /* TRVSMonitor.m */; };
+		32E76474187F8F9800F0CA5A /* TRVSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE1FFB18089B1C00753121 /* TRVSMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		32CE1FAC1807E79C00753121 /* PBXContainerItemProxy */ = {
+		32E7646E187F8F1B00F0CA5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 32CE1F841807E79B00753121 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 32CE1F8B1807E79B00753121;
-			remoteInfo = TRVSXCTestAsync;
+			remoteGlobalIDString = 32E7644E187F8F0200F0CA5A;
+			remoteInfo = "iOS Tests";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		32CE1F8C1807E79B00753121 /* TRVSMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRVSMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CE1F8F1807E79B00753121 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		32CE1F911807E79B00753121 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		32CE1F931807E79B00753121 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		32CE1FA71807E79C00753121 /* TRVSMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRVSMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CE1FA81807E79C00753121 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		32CE1FFA18089B1C00753121 /* TRVSMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSMonitor.h; sourceTree = "<group>"; };
 		32CE1FFB18089B1C00753121 /* TRVSMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSMonitor.m; sourceTree = "<group>"; };
-		32CE1FFE18089B1C00753121 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		32CE1FFF18089B1C00753121 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		32CE200018089B1C00753121 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CE200118089B1C00753121 /* TRVSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSAppDelegate.h; sourceTree = "<group>"; };
-		32CE200218089B1C00753121 /* TRVSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSAppDelegate.m; sourceTree = "<group>"; };
-		32CE200318089B1C00753121 /* TRVSMonitorExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TRVSMonitorExample-Info.plist"; sourceTree = "<group>"; };
-		32CE200418089B1C00753121 /* TRVSMonitorExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TRVSMonitorExample-Prefix.pch"; sourceTree = "<group>"; };
-		32CE200718089B1C00753121 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		32CE200818089B1C00753121 /* TRVSMonitorTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TRVSMonitorTests-Info.plist"; sourceTree = "<group>"; };
-		32CE200918089B1C00753121 /* TRVSMonitorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSMonitorTests.m; sourceTree = "<group>"; };
+		32E7644F187F8F0200F0CA5A /* iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E76455187F8F0200F0CA5A /* iOS Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS Tests-Info.plist"; sourceTree = "<group>"; };
+		32E76457187F8F0200F0CA5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32E76459187F8F0200F0CA5A /* iOS_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Tests.m; sourceTree = "<group>"; };
+		32E7645B187F8F0200F0CA5A /* iOS Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS Tests-Prefix.pch"; sourceTree = "<group>"; };
+		32E76463187F8F1B00F0CA5A /* OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E76467187F8F1B00F0CA5A /* OS X Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OS X Tests-Info.plist"; sourceTree = "<group>"; };
+		32E76469187F8F1B00F0CA5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32E7646B187F8F1B00F0CA5A /* OS_X_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OS_X_Tests.m; sourceTree = "<group>"; };
+		32E7646D187F8F1B00F0CA5A /* OS X Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OS X Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		32CE1F891807E79B00753121 /* Frameworks */ = {
+		32E7644C187F8F0200F0CA5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32CE1F921807E79B00753121 /* CoreGraphics.framework in Frameworks */,
-				32CE1F941807E79B00753121 /* UIKit.framework in Frameworks */,
-				32CE1F901807E79B00753121 /* Foundation.framework in Frameworks */,
+				32E76450187F8F0200F0CA5A /* XCTest.framework in Frameworks */,
+				32E76452187F8F0200F0CA5A /* UIKit.framework in Frameworks */,
+				32E76451187F8F0200F0CA5A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32CE1FA41807E79C00753121 /* Frameworks */ = {
+		32E76460187F8F1B00F0CA5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32CE1FA91807E79C00753121 /* XCTest.framework in Frameworks */,
-				32CE1FAB1807E79C00753121 /* UIKit.framework in Frameworks */,
-				32CE1FAA1807E79C00753121 /* Foundation.framework in Frameworks */,
+				32E76464187F8F1B00F0CA5A /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				32CE1FF918089B1C00753121 /* TRVSMonitor */,
-				32CE1FFC18089B1C00753121 /* TRVSMonitorExample */,
-				32CE200518089B1C00753121 /* TRVSMonitorTests */,
+				32E76453187F8F0200F0CA5A /* iOS Tests */,
+				32E76465187F8F1B00F0CA5A /* OS X Tests */,
 				32CE1F8E1807E79B00753121 /* Frameworks */,
 				32CE1F8D1807E79B00753121 /* Products */,
 			);
@@ -90,8 +84,8 @@
 		32CE1F8D1807E79B00753121 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32CE1F8C1807E79B00753121 /* TRVSMonitor.app */,
-				32CE1FA71807E79C00753121 /* TRVSMonitorTests.xctest */,
+				32E7644F187F8F0200F0CA5A /* iOS Tests.xctest */,
+				32E76463187F8F1B00F0CA5A /* OS X Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,66 +110,80 @@
 			path = TRVSMonitor;
 			sourceTree = "<group>";
 		};
-		32CE1FFC18089B1C00753121 /* TRVSMonitorExample */ = {
+		32E76453187F8F0200F0CA5A /* iOS Tests */ = {
 			isa = PBXGroup;
 			children = (
-				32CE1FFD18089B1C00753121 /* InfoPlist.strings */,
-				32CE1FFF18089B1C00753121 /* Images.xcassets */,
-				32CE200018089B1C00753121 /* main.m */,
-				32CE200118089B1C00753121 /* TRVSAppDelegate.h */,
-				32CE200218089B1C00753121 /* TRVSAppDelegate.m */,
-				32CE200318089B1C00753121 /* TRVSMonitorExample-Info.plist */,
-				32CE200418089B1C00753121 /* TRVSMonitorExample-Prefix.pch */,
+				32E76459187F8F0200F0CA5A /* iOS_Tests.m */,
+				32E76454187F8F0200F0CA5A /* Supporting Files */,
 			);
-			path = TRVSMonitorExample;
+			path = "iOS Tests";
 			sourceTree = "<group>";
 		};
-		32CE200518089B1C00753121 /* TRVSMonitorTests */ = {
+		32E76454187F8F0200F0CA5A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				32CE200618089B1C00753121 /* InfoPlist.strings */,
-				32CE200818089B1C00753121 /* TRVSMonitorTests-Info.plist */,
-				32CE200918089B1C00753121 /* TRVSMonitorTests.m */,
+				32E76455187F8F0200F0CA5A /* iOS Tests-Info.plist */,
+				32E76456187F8F0200F0CA5A /* InfoPlist.strings */,
+				32E7645B187F8F0200F0CA5A /* iOS Tests-Prefix.pch */,
 			);
-			path = TRVSMonitorTests;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32E76465187F8F1B00F0CA5A /* OS X Tests */ = {
+			isa = PBXGroup;
+			children = (
+				32E7646B187F8F1B00F0CA5A /* OS_X_Tests.m */,
+				32E76466187F8F1B00F0CA5A /* Supporting Files */,
+			);
+			path = "OS X Tests";
+			sourceTree = "<group>";
+		};
+		32E76466187F8F1B00F0CA5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32E76467187F8F1B00F0CA5A /* OS X Tests-Info.plist */,
+				32E76468187F8F1B00F0CA5A /* InfoPlist.strings */,
+				32E7646D187F8F1B00F0CA5A /* OS X Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		32CE1F8B1807E79B00753121 /* TRVSMonitor */ = {
+		32E7644E187F8F0200F0CA5A /* iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32CE1FB81807E79C00753121 /* Build configuration list for PBXNativeTarget "TRVSMonitor" */;
+			buildConfigurationList = 32E7645C187F8F0200F0CA5A /* Build configuration list for PBXNativeTarget "iOS Tests" */;
 			buildPhases = (
-				32CE1F881807E79B00753121 /* Sources */,
-				32CE1F891807E79B00753121 /* Frameworks */,
-				32CE1F8A1807E79B00753121 /* Resources */,
+				32E7644B187F8F0200F0CA5A /* Sources */,
+				32E7644C187F8F0200F0CA5A /* Frameworks */,
+				32E7644D187F8F0200F0CA5A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TRVSMonitor;
-			productName = TRVSXCTestAsync;
-			productReference = 32CE1F8C1807E79B00753121 /* TRVSMonitor.app */;
-			productType = "com.apple.product-type.application";
+			name = "iOS Tests";
+			productName = "iOS Tests";
+			productReference = 32E7644F187F8F0200F0CA5A /* iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		32CE1FA61807E79C00753121 /* TRVSMonitorTests */ = {
+		32E76462187F8F1B00F0CA5A /* OS X Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32CE1FBB1807E79C00753121 /* Build configuration list for PBXNativeTarget "TRVSMonitorTests" */;
+			buildConfigurationList = 32E76470187F8F1B00F0CA5A /* Build configuration list for PBXNativeTarget "OS X Tests" */;
 			buildPhases = (
-				32CE1FA31807E79C00753121 /* Sources */,
-				32CE1FA41807E79C00753121 /* Frameworks */,
-				32CE1FA51807E79C00753121 /* Resources */,
+				32E7645F187F8F1B00F0CA5A /* Sources */,
+				32E76460187F8F1B00F0CA5A /* Frameworks */,
+				32E76461187F8F1B00F0CA5A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				32CE1FAD1807E79C00753121 /* PBXTargetDependency */,
+				32E7646F187F8F1B00F0CA5A /* PBXTargetDependency */,
 			);
-			name = TRVSMonitorTests;
-			productName = TRVSXCTestAsyncTests;
-			productReference = 32CE1FA71807E79C00753121 /* TRVSMonitorTests.xctest */;
+			name = "OS X Tests";
+			productName = "OS X Tests";
+			productReference = 32E76463187F8F1B00F0CA5A /* OS X Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -188,8 +196,8 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Travis Jeffery";
 				TargetAttributes = {
-					32CE1FA61807E79C00753121 = {
-						TestTargetID = 32CE1F8B1807E79B00753121;
+					32E76462187F8F1B00F0CA5A = {
+						TestTargetID = 32E7644E187F8F0200F0CA5A;
 					};
 				};
 			};
@@ -205,73 +213,73 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				32CE1F8B1807E79B00753121 /* TRVSMonitor */,
-				32CE1FA61807E79C00753121 /* TRVSMonitorTests */,
+				32E7644E187F8F0200F0CA5A /* iOS Tests */,
+				32E76462187F8F1B00F0CA5A /* OS X Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		32CE1F8A1807E79B00753121 /* Resources */ = {
+		32E7644D187F8F0200F0CA5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32CE200C18089B1C00753121 /* Images.xcassets in Resources */,
+				32E76458187F8F0200F0CA5A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32CE1FA51807E79C00753121 /* Resources */ = {
+		32E76461187F8F1B00F0CA5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32E7646A187F8F1B00F0CA5A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		32CE1F881807E79B00753121 /* Sources */ = {
+		32E7644B187F8F0200F0CA5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32CE200D18089B1C00753121 /* main.m in Sources */,
-				32CE200A18089B1C00753121 /* TRVSMonitor.m in Sources */,
-				32CE200E18089B1C00753121 /* TRVSAppDelegate.m in Sources */,
+				32E7645A187F8F0200F0CA5A /* iOS_Tests.m in Sources */,
+				32E76473187F8F9700F0CA5A /* TRVSMonitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32CE1FA31807E79C00753121 /* Sources */ = {
+		32E7645F187F8F1B00F0CA5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32CE201318089B9400753121 /* TRVSMonitorTests.m in Sources */,
-				32CE201418089B9A00753121 /* TRVSMonitor.m in Sources */,
+				32E7646C187F8F1B00F0CA5A /* OS_X_Tests.m in Sources */,
+				32E76474187F8F9800F0CA5A /* TRVSMonitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		32CE1FAD1807E79C00753121 /* PBXTargetDependency */ = {
+		32E7646F187F8F1B00F0CA5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 32CE1F8B1807E79B00753121 /* TRVSMonitor */;
-			targetProxy = 32CE1FAC1807E79C00753121 /* PBXContainerItemProxy */;
+			target = 32E7644E187F8F0200F0CA5A /* iOS Tests */;
+			targetProxy = 32E7646E187F8F1B00F0CA5A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		32CE1FFD18089B1C00753121 /* InfoPlist.strings */ = {
+		32E76456187F8F0200F0CA5A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				32CE1FFE18089B1C00753121 /* en */,
+				32E76457187F8F0200F0CA5A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		32CE200618089B1C00753121 /* InfoPlist.strings */ = {
+		32E76468187F8F1B00F0CA5A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				32CE200718089B1C00753121 /* en */,
+				32E76469187F8F1B00F0CA5A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -351,70 +359,87 @@
 			};
 			name = Release;
 		};
-		32CE1FB91807E79C00753121 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TRVSMonitorExample/TRVSMonitorExample-Prefix.pch";
-				INFOPLIST_FILE = "TRVSMonitorExample/TRVSMonitorExample-Info.plist";
-				PRODUCT_NAME = TRVSMonitor;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		32CE1FBA1807E79C00753121 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TRVSMonitorExample/TRVSMonitorExample-Prefix.pch";
-				INFOPLIST_FILE = "TRVSMonitorExample/TRVSMonitorExample-Info.plist";
-				PRODUCT_NAME = TRVSMonitor;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		32CE1FBC1807E79C00753121 /* Debug */ = {
+		32E7645D187F8F0200F0CA5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TRVSMonitor.app/TRVSMonitor";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TRVSMonitorExample/TRVSMonitorExample-Prefix.pch";
+				GCC_PREFIX_HEADER = "iOS Tests/iOS Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "TRVSMonitorTests/TRVSMonitorTests-Info.plist";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "iOS Tests/iOS Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		32CE1FBD1807E79C00753121 /* Release */ = {
+		32E7645E187F8F0200F0CA5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TRVSMonitor.app/TRVSMonitor";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TRVSMonitorExample/TRVSMonitorExample-Prefix.pch";
-				INFOPLIST_FILE = "TRVSMonitorTests/TRVSMonitorTests-Info.plist";
+				GCC_PREFIX_HEADER = "iOS Tests/iOS Tests-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "iOS Tests/iOS Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		32E76471187F8F1B00F0CA5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OS X Tests/OS X Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "OS X Tests/OS X Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		32E76472187F8F1B00F0CA5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OS X Tests/OS X Tests-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "OS X Tests/OS X Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -431,23 +456,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32CE1FB81807E79C00753121 /* Build configuration list for PBXNativeTarget "TRVSMonitor" */ = {
+		32E7645C187F8F0200F0CA5A /* Build configuration list for PBXNativeTarget "iOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				32CE1FB91807E79C00753121 /* Debug */,
-				32CE1FBA1807E79C00753121 /* Release */,
+				32E7645D187F8F0200F0CA5A /* Debug */,
+				32E7645E187F8F0200F0CA5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		32CE1FBB1807E79C00753121 /* Build configuration list for PBXNativeTarget "TRVSMonitorTests" */ = {
+		32E76470187F8F1B00F0CA5A /* Build configuration list for PBXNativeTarget "OS X Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				32CE1FBC1807E79C00753121 /* Debug */,
-				32CE1FBD1807E79C00753121 /* Release */,
+				32E76471187F8F1B00F0CA5A /* Debug */,
+				32E76472187F8F1B00F0CA5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
